@@ -1,1 +1,1 @@
-Tutaj jest tekst do konfliktu
+Inna składnia niż w oryginalnym pliku
