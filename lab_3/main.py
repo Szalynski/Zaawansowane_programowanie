@@ -29,5 +29,9 @@ print(zawiera([1,2,3,4,5],6))
 print(listmerger([1,2,3,4,5],[4,5,6,7,8]))
 
 #Zadanie 7
-response_API = requests.get('https://api.openbrewerydb.org/breweries')
-print(response_API.jason())
+response_API = requests.get('https://api.openbrewerydb.org/breweries?per_page=20')
+print(response_API.json())
+i=0
+while i < len(response_API.json()):
+    print(response_API.json()[i])
+    i+=1
