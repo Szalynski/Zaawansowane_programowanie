@@ -13,8 +13,9 @@ class House(Property):
     def __str__(self):
         return ""
 
+
 class Flat(property):
-    def __init__(self,floor):
+    def __init__(self, floor):
         self.floor = floor
 
     def __str__(self):

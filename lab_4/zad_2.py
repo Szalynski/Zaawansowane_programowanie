@@ -7,7 +7,8 @@ class Library():
         self.phone = phone
 
     def __str__(self):
-        return f'Biblioteka znajduje się na ulicy {self.street} {self.zip_code} {self.city}. Godziny otwarcia {self.open_hours}. Kontakt {self.phone}.'
+        return f'Biblioteka znajduje się na ulicy {self.street} {self.zip_code} ' \
+               f'{self.city}. Godziny otwarcia {self.open_hours}. Kontakt {self.phone}.'
 
 
 class Employee():
@@ -22,7 +23,8 @@ class Employee():
         self.phone = phone
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}, urodzony {self.birth_date} zatrudniony {self.hire_date}. Adress {self.city} {self.zip_code} {self.street}. Kontakt {self.phone}'
+        return f'{self.first_name} {self.last_name}, urodzony {self.birth_date} ' \
+               f'zatrudniony {self.hire_date}. Adress {self.city} {self.zip_code} {self.street}. Kontakt {self.phone}'
 
 
 class Book():
@@ -34,7 +36,9 @@ class Book():
         self.number_of_pages = number_of_pages
 
     def __str__(self):
-        return f'Książka z biblioteki {self.library}. Autorstwa {self.author_name} {self.author_surname} wydana {self.publication_date}. Ilość stron {self.number_of_pages}'
+        return f'Książka z biblioteki {self.library}. Autorstwa ' \
+               f'{self.author_name} {self.author_surname} wydana ' \
+               f'{self.publication_date}. Ilość stron {self.number_of_pages}'
 
 
 class Order():
@@ -45,4 +49,5 @@ class Order():
         self.order_date = order_date
 
     def __str__(self):
-        return f'Książki {self.books} zamówione przez {self.student}. Data zamówienia {self.order_date}, realizator {self.employee}'
+        return f'Książki {self.books} zamówione przez ' \
+               f'{self.student}. Data zamówienia {self.order_date}, realizator {self.employee}'
