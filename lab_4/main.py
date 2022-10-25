@@ -38,4 +38,7 @@ print(Order2)
 
 # Zad 3
 
-Flat1 = Flat("test")
+house1 = House("20000",15,"150000","Lewandowskiego 15a",3)
+flat1 = Flat("1500","5","20000","Tomaszewskiego 2b","15")
+print(house1)
+print(flat1)
