@@ -1,10 +1,8 @@
 import cv2 as cv
-
-HOGCV = cv.HOGDescriptor()
-HOGCV.setSVMDetector(cv.HOGDescriptor_getDefaultPeopleDetector())
-
-
 def detect(frame):
+    HOGCV = cv.HOGDescriptor()
+    HOGCV.setSVMDetector(cv.HOGDescriptor_getDefaultPeopleDetector())
+
     bounding_box_cordinates, weights = HOGCV.detectMultiScale(frame, winStride=(4, 4), padding=(8, 8), scale=1.03)
 
     person = 1
