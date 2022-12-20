@@ -1,7 +1,6 @@
-import cv2 as cv
 from Functions import loadImage as lI
 
-name = 'Photos/photo3.jpg'
+name = 'Photos/photo4.jpg'
 
 lI.load(name)
 

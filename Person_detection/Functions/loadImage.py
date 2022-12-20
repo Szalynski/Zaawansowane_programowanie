@@ -6,7 +6,9 @@ from Functions import showImage as sI
 def load(path):
     image = cv.imread(path)
 
-    image = im.resize(image, width=min(2000, image.shape[1]))
+    sI.show(image)
+
+    image = im.resize(image, width=min(3000, image.shape[1]))
 
     result_image = hD.detect(image)
 
